@@ -17,5 +17,7 @@ MonoBehaviour:
     WorldId: 1
   - WorldObject: {fileID: 7540296200587250862, guid: 3310315044be14445af174e26e068500, type: 3}
     WorldId: 2
-  - WorldObject: {fileID: 7540296200587250862, guid: 62771e6e36aa146d98aaa22ddf257f6e, type: 3}
+  - WorldObject: {fileID: 7540296200587250862, guid: 458903c2416b7aa4d8cf29cc5af5a6ee, type: 3}
     WorldId: 3
+  - WorldObject: {fileID: 7540296200587250862, guid: 458903c2416b7aa4d8cf29cc5af5a6ee, type: 3}
+    WorldId: 4

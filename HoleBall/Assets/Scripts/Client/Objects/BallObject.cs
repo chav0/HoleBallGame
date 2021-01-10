@@ -38,9 +38,11 @@ namespace Client.Objects
                 var fanTransform = fanObject.gameObject.transform;
                 var velocity = Rigidbody.velocity;
                 var forward = fanTransform.forward.normalized;
-                var otherDirection = Vector3.one - new Vector3(Mathf.Abs(forward.x), Mathf.Abs(forward.y), Mathf.Abs(forward.z));
-                Rigidbody.velocity = forward * fanObject.Force + new Vector3(velocity.x * otherDirection.x, velocity.y * otherDirection.y, velocity.z * 
-                otherDirection.z) * fanObject.Deceleration; 
+                //an attempt to improve the movement of the ball
+                Rigidbody.AddForce(forward*fanObject.Force*Time.fixedDeltaTime);
+                // var otherDirection = Vector3.one - new Vector3(Mathf.Abs(forward.x), Mathf.Abs(forward.y), Mathf.Abs(forward.z));
+                // Rigidbody.velocity = forward * fanObject.Force + new Vector3(velocity.x * otherDirection.x, velocity.y * otherDirection.y, velocity.z * 
+                // otherDirection.z) * fanObject.Deceleration; 
             }
             
             var acceleratorObject = other.GetComponent<AcceleratorObject>();
@@ -53,8 +55,9 @@ namespace Client.Objects
             var speedObject = other.GetComponent<SpeedObject>();
             if (speedObject != null)
             {
-                if (speedObject.Speed > 0f)
-                    Rigidbody.velocity = Rigidbody.velocity.normalized * speedObject.Speed;
+                //created unnatural ball's behaviour
+                // if (speedObject.Speed > 0f)
+                //     Rigidbody.velocity = Rigidbody.velocity.normalized * speedObject.Speed;
             }
         }
     }

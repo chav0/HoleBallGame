@@ -1,0 +1,240 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'ru' Physical Memory: 16321 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\UnityEngine\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/UnityProjects/HoleBallGame/HoleBall
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62657
+Successfully changed project path to: E:/UnityProjects/HoleBallGame/HoleBall
+E:/UnityProjects/HoleBallGame/HoleBall
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 46.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path E:/UnityEngine/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UnityProjects/HoleBallGame/HoleBall/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2990 MB
+    Driver:   27.21.14.6079
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'E:/UnityEngine/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'E:/UnityEngine/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/UnityEngine/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/UnityEngine/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: E:/UnityEngine/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001006 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.467 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001658 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.963 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2834 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.5 MB.
+System memory in use after: 133.7 MB.
+
+Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 3281.
+Total: 2.884380 ms (FindLiveObjects: 0.290484 ms CreateObjectMapping: 0.170082 ms MarkObjects: 2.261623 ms  DeleteObjects: 0.161023 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/FBX/lopast.fbx
+  artifactKey: Guid(d881b4c6ae0c340398358f2b7c3507c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/lopast.fbx using Guid(d881b4c6ae0c340398358f2b7c3507c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d3c5592e5f3d79edc6c0df9e87a054') in 0.386475 seconds
+  Import took 0.391195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Resources/FBX/cube.fbx
+  artifactKey: Guid(bfc63beee05b84abebedea1cdb2b9847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/cube.fbx using Guid(bfc63beee05b84abebedea1cdb2b9847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f192214472359c8e0eb969f2457eee') in 0.028708 seconds
+  Import took 0.032771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Resources/FBX/uploads_files_2005361_bunny+fbx.fbx
+  artifactKey: Guid(de809de61c3714fb1969f81ddfd0984d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/uploads_files_2005361_bunny+fbx.fbx using Guid(de809de61c3714fb1969f81ddfd0984d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9066b714c21bbfdc95680b5f0375c9a3') in 0.034383 seconds
+  Import took 0.038750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Resources/FBX/ventel.fbx
+  artifactKey: Guid(e5397935907e24a0daf0860a23b76dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/ventel.fbx using Guid(e5397935907e24a0daf0860a23b76dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081b5898b0781a7675824a5d61101c96') in 0.037025 seconds
+  Import took 0.041172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Resources/FBX/curve_outside.fbx
+  artifactKey: Guid(cd50624a7f59347b2929c79add3f981f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/curve_outside.fbx using Guid(cd50624a7f59347b2929c79add3f981f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '066030d7b3b658a1257e2b851d5d906f') in 0.025061 seconds
+  Import took 0.047486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Resources/FBX/tramp.fbx
+  artifactKey: Guid(1390b302734004d2ba3130bcaf35e2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/tramp.fbx using Guid(1390b302734004d2ba3130bcaf35e2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d64ef7c5993f5f74cc6ad7f37f2399') in 0.023850 seconds
+  Import took 0.028135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Resources/FBX/lunka.fbx
+  artifactKey: Guid(99791ef89f8624934802a2eb875cd34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/lunka.fbx using Guid(99791ef89f8624934802a2eb875cd34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d54ae403d410cff3530f935419802df') in 0.024368 seconds
+  Import took 0.028407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Resources/FBX/arrow.png
+  artifactKey: Guid(ab54c6cc6d7e84a49a1240c2ff254faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/arrow.png using Guid(ab54c6cc6d7e84a49a1240c2ff254faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538e9fcfcf90a35c9c5517fa9d79511b') in 0.037492 seconds
+  Import took 0.041428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Resources/FBX/flag.fbx
+  artifactKey: Guid(e46c17b8a4a614be690c500be41a6c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/flag.fbx using Guid(e46c17b8a4a614be690c500be41a6c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795309091179d4cdda7a6f633ac5c124') in 0.031419 seconds
+  Import took 0.035215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Resources/FBX/prygay-kiska.fbx
+  artifactKey: Guid(c37d8cd0abd8e453597adb5c8331d5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/prygay-kiska.fbx using Guid(c37d8cd0abd8e453597adb5c8331d5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cd7952bd3de94c10a54e49273393b4') in 0.035868 seconds
+  Import took 0.039739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Resources/FBX/end_1.fbx
+  artifactKey: Guid(433df17aec9e04f5baa94d07c753d5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/end_1.fbx using Guid(433df17aec9e04f5baa94d07c753d5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617cea9ca14d045236af346fa8851555') in 0.026120 seconds
+  Import took 0.029913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Resources/FBX/gorka (2).fbx
+  artifactKey: Guid(0aa404ce645074564b23273469bf9899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/gorka (2).fbx using Guid(0aa404ce645074564b23273469bf9899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52503bcd517865807fe0dbc65203890') in 0.027171 seconds
+  Import took 0.030992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Resources/FBX/truba (2).fbx
+  artifactKey: Guid(3e8ce6f9b99ca407baa89d7f15e47eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/truba (2).fbx using Guid(3e8ce6f9b99ca407baa89d7f15e47eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7996024ada9360aa32f072cb277a3cdc') in 0.022269 seconds
+  Import took 0.026216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Resources/FBX/line_outside.fbx
+  artifactKey: Guid(a30b1bb8bf87d4d768dc31df1224a656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/line_outside.fbx using Guid(a30b1bb8bf87d4d768dc31df1224a656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c72b41bdb60c40d821c66e1f18b80a') in 0.023110 seconds
+  Import took 0.027071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Resources/FBX/truba_curve (1).fbx
+  artifactKey: Guid(d574d9e630c9e4437bb19cbe0b068a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/truba_curve (1).fbx using Guid(d574d9e630c9e4437bb19cbe0b068a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd33eac5d4e2ea809e30609c8ebc426b') in 0.022567 seconds
+  Import took 0.026415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Resources/FBX/spiral (1).fbx
+  artifactKey: Guid(3d1cfed4a5b734897ac277e8233f3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/spiral (1).fbx using Guid(3d1cfed4a5b734897ac277e8233f3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c408b77d3db8ae4ed680d58ba9888166') in 0.023868 seconds
+  Import took 0.027869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Resources/FBX/curve_inside.fbx
+  artifactKey: Guid(6a01f52261e6342359c1fcbb207dcf85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/curve_inside.fbx using Guid(6a01f52261e6342359c1fcbb207dcf85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9c5a6bf98b36ff99769de14ed2b1a2') in 0.023654 seconds
+  Import took 0.027643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Resources/FBX/line_inside.fbx
+  artifactKey: Guid(4ae631fafcd71441a968780ec2712988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/line_inside.fbx using Guid(4ae631fafcd71441a968780ec2712988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c487aa4774d8eb06d6ccb5a97b90581') in 0.026967 seconds
+  Import took 0.030804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Resources/FBX/ventel 1.fbx
+  artifactKey: Guid(6eade548e617e4f9c9ed1dfcd5d84cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/ventel 1.fbx using Guid(6eade548e617e4f9c9ed1dfcd5d84cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd475dcb4b84728de2ae7d22842d36a8') in 0.027059 seconds
+  Import took 0.030962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Resources/FBX/end_2.fbx
+  artifactKey: Guid(30e9a6010b2c048789673b8042511164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/FBX/end_2.fbx using Guid(30e9a6010b2c048789673b8042511164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f471c349eda1d836dceefe143b5f3e') in 0.023052 seconds
+  Import took 0.027194 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
