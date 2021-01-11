@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Client.Objects
 {
-    public class DoorObject : MonoBehaviour
+    public class DoorObject : MonoBehaviour, IButtonControllable
     {
         [SerializeField] private Transform _door1; 
         [SerializeField] private Transform _door2;
@@ -37,6 +37,11 @@ namespace Client.Objects
                 .AppendInterval(_timeToClose)
                 .Append(_door1.DOLocalRotate(new Vector3(0f, 0f, 0f), _timeToOpen))
                 .Join(_door2.DOLocalRotate(new Vector3(0f, 0f, 180f), _timeToOpen)); 
+        }
+
+        public void SetEnabled(bool enable)
+        {
+            Open();
         }
     }
 }
