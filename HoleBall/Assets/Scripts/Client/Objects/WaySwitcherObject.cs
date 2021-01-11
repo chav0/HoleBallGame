@@ -7,8 +7,7 @@ namespace Client.Objects
     {
         public Quaternion ALocalRotation;
         public Quaternion BLocalRotation;
-        public Rigidbody Object;
-        private bool _enabled;
+        public HingeJoint HingeJoint;
 
         private void OnMouseDown()
         {
@@ -17,9 +16,9 @@ namespace Client.Objects
         
         private void Switch()
         {
-            _enabled = !_enabled;
-            Object.DORotate(_enabled ? ALocalRotation.eulerAngles : BLocalRotation.eulerAngles, 0.2f)
-                .SetEase(Ease.OutExpo);
+            var motor = HingeJoint.motor;
+            motor.targetVelocity = -motor.targetVelocity;
+            HingeJoint.motor = motor;
         }
         
     }
