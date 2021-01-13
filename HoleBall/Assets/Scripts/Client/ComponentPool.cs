@@ -33,7 +33,7 @@ namespace Client
             }
             if (res == null)
             {
-                res = Object.Instantiate<T>(_prefab, _parent, worldPositionStays:false);
+                res = Object.Instantiate<T>(_prefab, _parent, false);
             }
             if (_enableOnGet)
             {

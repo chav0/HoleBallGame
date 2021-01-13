@@ -7,5 +7,6 @@ namespace Client.View
     {
         public Button Start; 
         public Button Restart; 
+        public Button ToMenu; 
     }
 }

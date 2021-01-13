@@ -5,19 +5,31 @@
         public override void OnEnter()
         {
             Context.Screens.SetBattleView();
+
+            var startButton = Context.Screens.GameWindow.Start;
+            var restartButton = Context.Screens.GameWindow.Restart; 
             
-            Context.Screens.GameWindow.Start.onClick.AddListener(() =>
+            restartButton.gameObject.SetActive(false);
+            startButton.gameObject.SetActive(true);
+            
+            startButton.onClick.AddListener(() =>
             {
                 Context.AppModel.World.Start();
-                Context.Screens.GameWindow.Restart.gameObject.SetActive(true);
-                Context.Screens.GameWindow.Start.gameObject.SetActive(false);
+                restartButton.gameObject.SetActive(true);
+                startButton.gameObject.SetActive(false);
             });
             
             Context.Screens.GameWindow.Restart.onClick.AddListener(() =>
             {
                 Context.AppModel.World.Restart();
-                Context.Screens.GameWindow.Restart.gameObject.SetActive(false);
-                Context.Screens.GameWindow.Start.gameObject.SetActive(true);
+                restartButton.gameObject.SetActive(false);
+                startButton.gameObject.SetActive(true);
+            });
+            
+            Context.Screens.GameWindow.ToMenu.onClick.AddListener(() =>
+            {
+                SetState(new ChooseWorldViewState());
+                Context.AppModel.DeleteWorld();
             });
         }
         
@@ -30,6 +42,7 @@
         {
             if (Context.AppModel.World.BallInTheHole)
             {
+                Context.AppModel.PlayerProfileStorage.LastCompletedWorld = Context.AppModel.World.WorldId; 
                 Context.AppModel.World.SetWin();
                 SetState(new ResultViewState());
             }

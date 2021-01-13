@@ -1,3 +1,6 @@
+using Client.View;
+using UnityEngine;
+
 namespace Client.ViewStates
 {
     public class ChooseWorldViewState : BaseViewState
@@ -5,18 +8,18 @@ namespace Client.ViewStates
         public override void OnEnter()
         {
             Context.Screens.SetChooseWorldView();
-            Context.Screens.ChooseWorld.WorldButton1.Button.onClick.AddListener(() =>
+
+            var chooseWorldWidget = Context.Screens.ChooseWorld;
+            var worlds = Context.AppModel.Resources.Worlds; 
+            var count = worlds.Length; 
+            for (var i = 0; i < count; i++)
             {
-                SetState(new LoadingViewState(1));
-            });
-            Context.Screens.ChooseWorld.WorldButton2.Button.onClick.AddListener(() =>
-            {
-                SetState(new LoadingViewState(2));
-            });
-            Context.Screens.ChooseWorld.WorldButton3.Button.onClick.AddListener(() =>
-            {
-                SetState(new LoadingViewState(3));
-            });
+                var world = worlds[i];
+                var button = chooseWorldWidget.Buttons.Count > i ? chooseWorldWidget.Buttons[i] : Context.Screens.ChooseWorld.CreateButton(world);
+
+                button.Button.interactable = world.WorldId <= Context.AppModel.PlayerProfileStorage.LastCompletedWorld + 1; 
+                button.Button.onClick.AddListener(() => { SetState(new LoadingViewState(world.WorldId)); });
+            }
         }
         
         public override void PreModelUpdate()

@@ -7,7 +7,7 @@
             Context.Screens.SetResultView();
             Context.Screens.ResultWindow.MainMenu.onClick.AddListener(() =>
             {
-                SetState(new MainMenuViewState());
+                SetState(new ChooseWorldViewState());
                 Context.AppModel.DeleteWorld();
             });
             Context.Screens.ResultWindow.NextWorld.onClick.AddListener(() =>

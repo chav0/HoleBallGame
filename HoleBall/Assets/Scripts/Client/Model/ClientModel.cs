@@ -7,7 +7,8 @@ namespace Client.Model
     {
         public readonly GameSettings Settings;
         public readonly UnityScene Scene;
-        private readonly Resources Resources; 
+        public readonly Resources Resources; 
+        public readonly PlayerProfileStorage PlayerProfileStorage; 
         
         public BaseModelState CurrentState { get; set; }
         public ModelStatus Status => CurrentState.Status; 
@@ -18,6 +19,8 @@ namespace Client.Model
             Settings = gameSettings;
             Scene = scene;
             Resources = resources; 
+            
+            PlayerProfileStorage = new PlayerProfileStorage();
             CurrentState = new InitModelState();
             CurrentState.Context = this; 
             CurrentState.OnEnter();
