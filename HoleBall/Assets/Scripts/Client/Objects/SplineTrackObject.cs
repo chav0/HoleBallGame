@@ -19,7 +19,7 @@ namespace Client.Objects
                         currentValue = value;
                         go.transform.position = Spline.EvaluatePosition(value);
                     }, start, end, TrackingDuration))
-                .AppendCallback(() => go.GetComponent<Rigidbody>().isKinematic = false);
+                .AppendCallback(() => go.GetComponent<Rigidbody>().isKinematic = false).SetEase(Ease.InCubic);
         }
     }
 }

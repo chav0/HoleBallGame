@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Resources
   m_EditorClassIdentifier: 
   Worlds:
-  - WorldObject: {fileID: 7540296200587250862, guid: c1f3f61354b2de24189eaa95ae174a55, type: 3}
+  - WorldObject: {fileID: 7540296200587250862, guid: 64434bc58fa6c46f58940a0d44834aa9, type: 3}
     WorldId: 1
   - WorldObject: {fileID: 7540296200587250862, guid: 3310315044be14445af174e26e068500, type: 3}
     WorldId: 2
