@@ -15,10 +15,13 @@ namespace Client.Objects
         {
             Balls = GameObject.FindGameObjectsWithTag("Ball").Select(x => x.GetComponent<BallObject>()).ToArray();
             var targetGroup = FindObjectOfType<CinemachineTargetGroup>();
-            targetGroup.m_Targets = Balls.Select(x =>
+            if (targetGroup)
             {
-                return new CinemachineTargetGroup.Target() {radius = 3, target = x.transform, weight = 1};
-            }).ToArray();
+                targetGroup.m_Targets = Balls.Select(x =>
+                {
+                    return new CinemachineTargetGroup.Target() {radius = 3, target = x.transform, weight = 1};
+                }).ToArray();
+            }
         }
     }
 }

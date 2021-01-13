@@ -5,6 +5,7 @@ namespace Client.Objects
 {
     public class BallObject : MonoBehaviour
     {
+        public bool IsSlept;
         public Transform SpawnPoint; 
         public Rigidbody Rigidbody; 
         public bool BallInTheHole { get; private set; }
