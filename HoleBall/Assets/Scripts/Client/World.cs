@@ -31,7 +31,7 @@ namespace Client
         {
             foreach (var ball in _worldObject.Balls)
             {
-                ball.transform.position = ball.SpawnPoint.position;
+                ball.transform.position = ball.SpawnPosition;
                 ball.Rigidbody.useGravity = false; 
                 ball.Rigidbody.velocity = Vector3.zero;
                 ball.Rigidbody.freezeRotation = true;

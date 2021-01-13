@@ -42,7 +42,8 @@
         {
             if (Context.AppModel.World.BallInTheHole)
             {
-                Context.AppModel.PlayerProfileStorage.LastCompletedWorld = Context.AppModel.World.WorldId; 
+                if (Context.AppModel.PlayerProfileStorage.LastCompletedWorld < Context.AppModel.World.WorldId)
+                    Context.AppModel.PlayerProfileStorage.LastCompletedWorld = Context.AppModel.World.WorldId; 
                 Context.AppModel.World.SetWin();
                 SetState(new ResultViewState());
             }

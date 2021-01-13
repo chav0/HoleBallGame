@@ -9,6 +9,10 @@
             {
                 SetState(new ChooseWorldViewState());
             });
+            Context.Screens.MainMenu.Cheat.onClick.AddListener(() =>
+            {
+                Context.AppModel.PlayerProfileStorage.LastCompletedWorld = 1000; 
+            });
         }
         
         public override void PreModelUpdate()
