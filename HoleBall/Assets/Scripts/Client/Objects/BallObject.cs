@@ -5,10 +5,14 @@ namespace Client.Objects
 {
     public class BallObject : MonoBehaviour
     {
-        public bool IsSlept;
-        public Transform SpawnPoint; 
+        public Vector3 SpawnPosition; 
         public Rigidbody Rigidbody; 
         public bool BallInTheHole { get; private set; }
+
+        private void Awake()
+        {
+            SpawnPosition = transform.position;
+        }
 
         private void OnTriggerEnter(Collider other)
         {
